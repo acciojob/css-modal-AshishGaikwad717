@@ -8,7 +8,13 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-<script type="text/javascript" src="./script.js">
+<script>
+	var modal = document.getElementById("myModal");
+	window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 </script>
 	<button id="openModal" onclick="document.getElementById('myModal').style.display='block'">Open Modal</button>
 	<div class="modal" id="myModal">
