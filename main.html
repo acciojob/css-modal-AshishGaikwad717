@@ -8,14 +8,14 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+<script type="text/javascript" src="./script.js">
 </script>
-	<button id="openModal">Open Modal</button>
-	<div class="modal">
+	<button id="openModal" onclick="document.getElementById('myModal').style.display='block'">Open Modal</button>
+	<div class="modal" id="myModal">
 		<div class="modal-content">
 			<div class="modal-header">
 				<h2>Modal Header</h2>
-				<span class="close-modal">&times;</span>
+				<span class="close-modal" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 			</div>
 			<div class="modal-body">
 				<p>Modal Body Content</p>
