@@ -8,14 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-<script>
-	var modal = document.getElementById("myModal");
-	window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+
 	<button id="openModal" onclick="document.getElementById('myModal').style.display='block'">Open Modal</button>
 	<div class="modal" id="myModal">
 		<div class="modal-content">
@@ -28,6 +21,14 @@
 			</div>
 		</div>
 	</div>
+	<script>
+	var modal = document.getElementById('myModal');
+	window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 
 </html>
